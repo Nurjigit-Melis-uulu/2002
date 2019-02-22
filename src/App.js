@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Data from './Data/Data';
 
 class App extends Component {
 
@@ -113,7 +114,7 @@ class App extends Component {
         </ul>
 
         <ul>
-          {cars}
+          <Data data={cars} />
 
           <li>
             <input type="text" onChange={this.addMarka} value={this.state.marka} />
